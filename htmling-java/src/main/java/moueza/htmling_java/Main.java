@@ -1,7 +1,5 @@
 package moueza.htmling_java;
 
-import static org.junit.Assert.assertEquals;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,12 +7,15 @@ public class Main {
 
 	/** no empty line */
 	public String tablingNoempty(String strr) {
-		List<String> linesColl = new ArrayList<String>(null);
+		List<String> linesColl = new ArrayList<String>();// .=null
 
 		// https://codegym.cc/fr/groups/posts/la-methode-string-split-en-java*/
-		String[] words = strr.split(" ");
-		for (String word : words) {
-			System.out.println(word);
+		// String[] words = strr.split(" +");
+		String[] words = strr.split("\n+");
+
+		// for (String word : words) {
+		for (int cpt = 0; cpt <= (words.length - 1); cpt++) {
+			System.out.println("line=" + cpt + " " + words[cpt]);
 		}
 
 		return "";
@@ -24,9 +25,26 @@ public class Main {
 		return "";
 	}
 
+	public String spaces2html(String strr) {
+		return "";
+	}
+
+	public String lines2html(String strr) {
+		return "";
+	}
+
+	public String tablingTextNewlines(String strr) {
+		return "";
+	}
+
+	public String indents2html(String strr) {
+		return "";
+	}
+
 	public static void main(String[] args) {
 		Main main = new Main();
-		main.tablingNoempty("3  5");
+		// String res= main.tablingNoempty("3 5");
+		String res = main.tablingNoempty("3  5" + "\n8");// TODO // par ligne
 
 	}
 
