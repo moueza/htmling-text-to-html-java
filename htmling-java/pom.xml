@@ -44,7 +44,7 @@
 
 		<!-- <springframework.version>4.3.7.RELEASE</springframework.version> regression 
 			because DispatchActionSupport deprecated no solution in Spring 4 -->
-		<springframework.version>5.3.18</springframework.version>
+		<springframework.version>5.3.26</springframework.version>
 		<springsecu.version>5.5.7</springsecu.version>
 
 		<hibernate.version>5.4.24.Final</hibernate.version>
